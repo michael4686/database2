@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat Page</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='chatstyle.css') }}">
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type your message...">
+      <button id="chat-submit">Send</button>
+    </div>
+    <script src="{{ url_for('static', filename='chatscript.js') }}"></script>
+    <script>
+      var fname = "{{ fname|safe }}";
+  </script>
+  </body>
+</html>

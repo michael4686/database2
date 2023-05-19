@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sgin up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signupstyle.css') }}">
+</head>
+<body> 
+    <form action="/page1"  method="post">
+        <div class="box ">
+            <span class="boxline"></span>
+        <div class="from">
+            <h2> sign up </h2>
+            <div class="inputbox">
+                <input type="text" required="required" name="fname">
+                <span>First name</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" required="required" name="sname">
+                <span>Second name</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required" name="password">
+                <span>password</span>
+                <i></i>
+            </div>
+                <div class="inputbox">
+                    <input type="email" required="required" name="email">
+                    <span>Email address</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input type="number" required="required" name="phone1">
+                    <span>first phone number</span>
+                    <i></i></div>
+                    <div class="inputbox"  >
+                        <input type="number" name="phone2" >
+                        <span>second phone number</span>
+                        <i></i></div>
+                    <div class="inputbox">
+                        <input type="date" required="required" name="date" >
+                        <span>brith day</span>
+                        <i></i> 
+                    </div>
+        
+            <div class="gender">
+                <label class="lb1">Gender</label>
+                <div class="radio-wrapper">
+                    <input type="radio" name="gender" id="male" value="male" checked />
+                    <label for="male">male</label>
+                </div>
+                <div class="radio-wrapper">
+                    <input type="radio" name="gender" id="female" value="female" >
+                    <label for="female">female</label>
+                </div>
+            </div>
+                <input type="submit" value="sing up">
+                </div>
+                
+                </div>
+                
+        </div>
+        </div>
+    </form>
+</body>
+</html>
